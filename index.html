@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sri Laxmi Prasanna Traders | Steel, Cement, Hardware &amp; Electricals, Sangareddy</title>
+<meta name="description" content="Sri Laxmi Prasanna Traders, Ootla, Jinnaram, Sangareddy. Steel, cement, hardware, electricals and all home construction materials from a supplier with 20+ years of experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14202b;--steel:#1f3140;--steel2:#2c4558;--concrete:#e8e6e1;--paper:#f7f6f3;--line:#cfccc4;--signal:#f2b705;--text:#25323d;--muted:#5b6770;
+--head:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"Barlow",system-ui,Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 var(--body);color:var(--text);background:var(--paper)}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);color:var(--ink);line-height:1.05;margin:0 0 .5em;letter-spacing:.01em}
+h1{font-size:clamp(2.6rem,7vw,5rem)}
+h2{font-size:clamp(2rem,4.5vw,3rem)}
+h3{font-size:1.6rem}
+p{margin:0 0 1em;max-width:62ch}
+:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--ink);color:#d8dde1;font-size:.92rem}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;padding-top:8px;padding-bottom:8px;justify-content:space-between}
+header.site{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:3px solid var(--signal)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{font-family:var(--head);font-size:1.55rem;font-weight:700;color:var(--ink);text-decoration:none;line-height:1}
+.brand small{display:block;font:500 .78rem var(--body);color:var(--muted);letter-spacing:.02em;margin-top:3px}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:10px 14px;text-decoration:none;font-weight:600;border-bottom:3px solid transparent}
+nav a:hover,nav a[aria-current="page"]{border-color:var(--ink)}
+.menu-btn{display:none;background:var(--ink);color:#fff;border:0;padding:10px 14px;font:600 1rem var(--body);cursor:pointer}
+.btn{display:inline-block;background:var(--signal);color:var(--ink);font:700 1.05rem var(--body);padding:14px 26px;border:2px solid var(--ink);text-decoration:none;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--ink)}
+.btn.alt{background:transparent;color:#fff;border-color:#fff}
+.btn.alt:hover{box-shadow:3px 3px 0 #fff}
+.page{display:none}
+.page.on{display:block}
+/* hero: rebar bundle motif */
+.hero{background:var(--steel);color:#fff;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 46px,rgba(255,255,255,.06) 46px 50px),repeating-linear-gradient(0deg,transparent 0 46px,rgba(255,255,255,.06) 46px 50px)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;padding-top:72px;padding-bottom:72px;align-items:center}
+.hero h1{color:#fff}
+.hero p{color:#d3dbe1;font-size:1.15rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.badge{background:var(--signal);color:var(--ink);padding:28px;text-align:center;border:3px solid var(--ink);box-shadow:8px 8px 0 rgba(0,0,0,.35)}
+.badge b{display:block;font:700 6rem/0.9 var(--head)}
+.badge span{display:block;font:700 1.5rem var(--head)}
+.badge p{margin:12px auto 0;font-size:.95rem;color:var(--ink)}
+.band{padding:68px 0}
+.band.dark{background:var(--steel);color:#d3dbe1}
+.band.dark h2,.band.dark h3{color:#fff}
+.band.grey{background:var(--concrete)}
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.cat{background:#fff;border:2px solid var(--ink);padding:24px;display:flex;flex-direction:column}
+.cat .bar{height:8px;background:var(--signal);margin:-24px -24px 20px}
+.cat a{margin-top:auto;font-weight:600}
+.pt{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:2px solid var(--ink);background:#fff}
+.pt div{padding:22px;border-right:2px solid var(--ink)}
+.pt div:last-child{border:0}
+.pt b{display:block;font:700 2.6rem/1 var(--head);color:var(--ink)}
+.pt span{color:var(--muted);font-size:.95rem}
+.pagehead{background:var(--steel);color:#fff;padding:56px 0 48px;border-bottom:6px solid var(--signal)}
+.pagehead h1{color:#fff;font-size:clamp(2.4rem,6vw,3.8rem);margin:0 0 .2em}
+.pagehead p{color:#d3dbe1;margin:0}
+.person{background:#fff;border:2px solid var(--ink);padding:28px}
+.person .role{font-weight:600;color:var(--muted);margin-bottom:12px}
+.mono{width:64px;height:64px;background:var(--steel);color:var(--signal);font:700 2rem var(--head);display:grid;place-items:center;margin-bottom:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:14px 0 0}
+.tags li{background:var(--concrete);padding:4px 12px;font-size:.92rem;font-weight:500}
+.plist{columns:2;gap:24px;padding-left:20px;margin:0}
+.plist li{margin-bottom:6px;break-inside:avoid}
+.prod{background:#fff;border:2px solid var(--ink);margin-bottom:24px;display:grid;grid-template-columns:240px 1fr}
+.prod>div:first-child{background:var(--steel);color:#fff;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.prod>div:first-child h3{color:#fff;margin:0}
+.prod>div:first-child small{color:var(--signal);font-weight:600}
+.prod>div:last-child{padding:28px}
+form{background:#fff;border:2px solid var(--ink);padding:28px}
+label{display:block;font-weight:600;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;padding:12px;border:2px solid var(--line);background:var(--paper);margin-bottom:16px;border-radius:0}
+input:focus,select:focus,textarea:focus{border-color:var(--ink);outline:0}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.note{font-size:.9rem;color:var(--muted)}
+#msg{display:none;background:#e6f3e6;border-left:6px solid #2e7d32;padding:12px 16px;margin-top:16px}
+.contact-card{background:var(--steel);color:#d3dbe1;padding:28px}
+.contact-card h3{color:#fff}
+.contact-card dt{color:var(--signal);font-weight:600;margin-top:16px}
+.contact-card dd{margin:0}
+footer{background:var(--ink);color:#aeb8bf;padding:44px 0 24px;font-size:.95rem}
+footer .grid{grid-template-columns:2fr 1fr 1fr}
+footer h3{color:#fff;font-size:1.25rem}
+footer ul{list-style:none;padding:0;margin:0}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+.copy{border-top:1px solid #2c3a46;margin-top:28px;padding-top:16px;font-size:.85rem}
+@media(max-width:860px){
+.hero .wrap,.g3,.g2,footer .grid,.prod{grid-template-columns:1fr}
+.pt{grid-template-columns:1fr 1fr}.pt div:nth-child(2){border-right:0}.pt div:nth-child(-n+2){border-bottom:2px solid var(--ink)}
+.plist{columns:1}.row{grid-template-columns:1fr}
+.menu-btn{display:block}
+nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:3px solid var(--signal)}
+nav.open{display:block}
+nav ul{flex-direction:column;padding:8px 20px}
+header.site .wrap{position:relative}
+.badge b{font-size:4.5rem}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <span>Behind Ootla Rice Mill, Ootla, Jinnaram, Potharam, Sangareddy 502319</span>
+  <span>Call: <a href="tel:+910000000000" class="ph">+91 00000 00000</a></span>
+</div></div>
+
+<header class="site"><div class="wrap">
+  <a class="brand" href="#home">Sri Laxmi Prasanna Traders<small>Steel, Cement, Hardware &amp; Electricals</small></a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main"><ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About us</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul></nav>
+</div></header>
+
+<main>
+<!-- HOME -->
+<section class="page" id="home">
+  <div class="hero"><div class="wrap">
+    <div>
+      <h1>Everything your build needs, from foundation to finishing.</h1>
+      <p>Steel, cement, hardware, electricals and all home construction materials, supplied from Ootla to builders, contractors and families across the Sangareddy region.</p>
+      <div class="cta"><a class="btn" href="#contact">Request a quote</a><a class="btn alt" href="#products">Browse products</a></div>
+    </div>
+    <div class="badge"><b>20+</b><span>years in business</span><p>Run by Kummari Babu, with accounts and costing handled in-house.</p></div>
+  </div></div>
+
+  <div class="band"><div class="wrap">
+    <h2>What we supply</h2>
+    <p>One counter for the whole job. Order a single bag of cement or a full site's worth of material.</p>
+    <div class="grid g3">
+      <div class="cat"><div class="bar"></div><h3>Steel</h3><p>TMT bars, binding wire, angles, channels, flats and sheets.</p><a href="#products">See steel range</a></div>
+      <div class="cat"><div class="bar"></div><h3>Cement</h3><p>Leading brands of OPC and PPC cement for slabs, columns and plastering.</p><a href="#products">See cement range</a></div>
+      <div class="cat"><div class="bar"></div><h3>Hardware</h3><p>Fittings, fasteners, tools, pipes, paints and everyday site supplies.</p><a href="#products">See hardware range</a></div>
+      <div class="cat"><div class="bar"></div><h3>Electricals</h3><p>Wires, cables, switches, MCBs, conduits and lighting for new homes.</p><a href="#products">See electricals range</a></div>
+      <div class="cat"><div class="bar"></div><h3>Construction materials</h3><p>Bricks, sand, aggregates, blocks and other core building material.</p><a href="#products">See materials</a></div>
+      <div class="cat" style="background:var(--signal)"><div class="bar" style="background:var(--ink)"></div><h3>Building in bulk?</h3><p>Tell us your quantities and timeline and we will quote the full list.</p><a href="#contact">Send a bulk enquiry</a></div>
+    </div>
+  </div></div>
+
+  <div class="band grey"><div class="wrap">
+    <h2>Why people buy from us</h2>
+    <div class="pt">
+      <div><b>20+</b><span>years of trading experience</span></div>
+      <div><b>5</b><span>product categories under one roof</span></div>
+      <div><b>CA/CMA</b><span>qualified financial oversight</span></div>
+      <div><b>1</b><span>owner you can speak to directly</span></div>
+    </div>
+  </div></div>
+
+  <div class="band dark"><div class="wrap grid g2" style="align-items:center">
+    <div><h2>Visit us at Ootla</h2><p>Behind Ootla Rice Mill, Ootla, Jinnaram, Potharam, Sangareddy, 502319.</p></div>
+    <div><a class="btn" href="#contact">Get directions and contact details</a></div>
+  </div></div>
+</section>
+
+<!-- ABOUT -->
+<section class="page" id="about">
+  <div class="pagehead"><div class="wrap"><h1>About us</h1><p>Two decades of supplying the people who build in Sangareddy.</p></div></div>
+  <div class="band"><div class="wrap grid g2">
+    <div>
+      <h2>A trusted name in local building supply</h2>
+      <p>Sri Laxmi Prasanna Traders has been supplying building materials from Ootla for more than 20 years. We started by serving local builders and homeowners, and we have grown by doing the same thing every day: stock what the job needs, quote honestly and deliver what we promised.</p>
+      <p>Today we carry steel, cement, hardware, electricals and the full range of home construction materials, so customers can complete a purchase in one place instead of visiting several shops.</p>
+    </div>
+    <div class="pt" style="grid-template-columns:1fr 1fr;align-self:start">
+      <div style="border-bottom:2px solid var(--ink)"><b>20+</b><span>years</span></div>
+      <div style="border-right:0;border-bottom:2px solid var(--ink)"><b>5</b><span>categories</span></div>
+      <div><b>B2B</b><span>and retail</span></div>
+      <div style="border-right:0"><b>Local</b><span>Sangareddy region</span></div>
+    </div>
+  </div></div>
+  <div class="band grey"><div class="wrap">
+    <h2>The people behind the counter</h2>
+    <div class="grid g2">
+      <div class="person"><div class="mono">KB</div><h3>Kummari Babu</h3><div class="role">Proprietor</div>
+        <p>Kummari Babu founded and runs the business, with more than 20 years of hands-on experience in the building materials trade. He knows the suppliers, the market and what local construction actually needs.</p>
+        <ul class="tags"><li>20+ years in trade</li><li>Supplier relationships</li><li>Local market knowledge</li></ul></div>
+      <div class="person"><div class="mono">KM</div><h3>Kummari Murali</h3><div class="role">Semi-qualified CA &amp; CMA</div>
+        <p>Kummari Murali brings professional training in accounting and cost management to the business. His work keeps pricing, billing and records accurate, which means clear quotes and clean paperwork for our customers.</p>
+        <ul class="tags"><li>Accounting</li><li>Cost management</li><li>Billing and records</li></ul></div>
+    </div>
+  </div></div>
+  <div class="band"><div class="wrap">
+    <h2>How we work</h2>
+    <div class="grid g3">
+      <div><h3>Fair, clear pricing</h3><p>You get a written quote with quantities and rates. Accounts are managed by a qualified professional.</p></div>
+      <div><h3>Wide stock</h3><p>From TMT bars to switches, most of what a home build needs is available from one supplier.</p></div>
+      <div><h3>Direct access</h3><p>Talk to the owner's team about your project, not a call centre.</p></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="page" id="products">
+  <div class="pagehead"><div class="wrap"><h1>Products</h1><p>Five categories covering a complete home or commercial build.</p></div></div>
+  <div class="band"><div class="wrap">
+    <div class="prod"><div><h3>Steel</h3><small>Structure and reinforcement</small><a href="#contact" class="btn">Ask for rates</a></div>
+      <div><p>Reinforcement and structural steel for foundations, slabs, columns and fabrication.</p>
+      <ul class="plist"><li>TMT reinforcement bars</li><li>Binding wire</li><li>MS angles and channels</li><li>MS flats and square bars</li><li>Plates and sheets</li><li>Roofing sheets</li></ul></div></div>
+    <div class="prod"><div><h3>Cement</h3><small>Bonding and finishing</small><a href="#contact" class="btn">Ask for rates</a></div>
+      <div><p>Branded cement for every stage, from foundation concrete to final plaster.</p>
+      <ul class="plist"><li>OPC cement</li><li>PPC cement</li><li>White cement</li><li>Tile adhesive</li><li>Waterproofing compounds</li><li>Wall putty</li></ul></div></div>
+    <div class="prod"><div><h3>Hardware</h3><small>Fittings and site supplies</small><a href="#contact" class="btn">Ask for rates</a></div>
+      <div><p>Tools, fittings and finishing items for carpenters, plumbers and masons.</p>
+      <ul class="plist"><li>Nails, screws and bolts</li><li>Door and window fittings</li><li>Locks and hinges</li><li>PVC and CPVC pipes</li><li>Paints and primers</li><li>Hand tools</li></ul></div></div>
+    <div class="prod"><div><h3>Electricals</h3><small>Wiring and lighting</small><a href="#contact" class="btn">Ask for rates</a></div>
+      <div><p>Everything to wire a new house safely, from the meter board to the last switch.</p>
+      <ul class="plist"><li>Copper wires and cables</li><li>Switches and sockets</li><li>MCBs and distribution boards</li><li>Conduit pipes</li><li>LED lights and fans</li><li>Earthing material</li></ul></div></div>
+    <div class="prod"><div><h3>Construction materials</h3><small>Core building material</small><a href="#contact" class="btn">Ask for rates</a></div>
+      <div><p>The bulk materials that make up the walls, floors and finish of a home.</p>
+      <ul class="plist"><li>Bricks and cement blocks</li><li>Sand</li><li>Aggregates and metal</li><li>Tiles</li><li>Plumbing and sanitary items</li><li>Other home construction needs</li></ul></div></div>
+    <p class="note">Brands and availability change with the market. Contact us for the latest rates and stock.</p>
+  </div></div>
+  <div class="band dark"><div class="wrap grid g2" style="align-items:center">
+    <div><h2>Bulk and contractor orders</h2><p>Planning a full build or multiple sites? Send us your material list and schedule and we will prepare a combined quote.</p></div>
+    <div><a class="btn" href="#contact">Send a bulk enquiry</a></div>
+  </div></div>
+</section>
+
+<!-- CONTACT -->
+<section class="page" id="contact">
+  <div class="pagehead"><div class="wrap"><h1>Contact us</h1><p>Call, visit or send an enquiry. We will reply with rates and availability.</p></div></div>
+  <div class="band"><div class="wrap grid" style="grid-template-columns:1fr 1.3fr;align-items:start" id="cgrid">
+    <div class="contact-card">
+      <h3>Sri Laxmi Prasanna Traders</h3>
+      <dl>
+        <dt>Address</dt><dd>Behind Ootla Rice Mill, Ootla, Jinnaram, Potharam, Sangareddy, Telangana 502319</dd>
+        <dt>Phone</dt><dd><a class="ph" href="tel:+910000000000">+91 00000 00000</a></dd>
+        <dt>Proprietor</dt><dd>Kummari Babu</dd>
+        <dt>Accounts and costing</dt><dd>Kummari Murali</dd>
+        <dt>Products</dt><dd>Steel, cement, hardware, electricals and home construction materials</dd>
+      </dl>
+      <p style="margin-top:20px"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ootla+Rice+Mill+Jinnaram+Sangareddy+502319">Open in Google Maps</a></p>
+    </div>
+    <form id="enq">
+      <h2 style="font-size:2rem">Send an enquiry</h2>
+      <div class="row"><div><label for="n">Name</label><input id="n" required autocomplete="name"></div>
+      <div><label for="p">Phone number</label><input id="p" type="tel" required autocomplete="tel"></div></div>
+      <div class="row"><div><label for="t">Enquiry type</label><select id="t"><option>Retail purchase</option><option>Bulk or contractor order</option><option>Price enquiry</option><option>Other</option></select></div>
+      <div><label for="c">Product category</label><select id="c"><option>Steel</option><option>Cement</option><option>Hardware</option><option>Electricals</option><option>Construction materials</option><option>Multiple categories</option></select></div></div>
+      <label for="m">Materials and quantities</label>
+      <textarea id="m" rows="5" required placeholder="Example: 2 tonnes 12 mm TMT bars, 100 bags PPC cement, delivery to Jinnaram"></textarea>
+      <button class="btn" type="submit">Send enquiry on WhatsApp</button>
+      <p class="note" style="margin-top:12px">Your enquiry opens in WhatsApp, ready to send to the shop.</p>
+      <div id="msg" role="status">Your enquiry is ready in WhatsApp. Press send there to finish.</div>
+    </form>
+  </div></div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <div class="grid">
+    <div><h3>Sri Laxmi Prasanna Traders</h3><p>Steel, cement, hardware, electricals and home construction materials. Serving Sangareddy for 20+ years.</p><p>Behind Ootla Rice Mill, Ootla, Jinnaram, Potharam, Sangareddy, 502319</p></div>
+    <div><h3>Pages</h3><ul><li><a href="#home">Home</a></li><li><a href="#about">About us</a></li><li><a href="#products">Products</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    <div><h3>Call us</h3><p><a class="ph" href="tel:+910000000000">+91 00000 00000</a></p></div>
+  </div>
+  <div class="copy">&copy; <span id="yr"></span> Sri Laxmi Prasanna Traders. All rights reserved.</div>
+</div></footer>
+
+<script>
+/* ===== EDIT THESE TWO LINES ===== */
+var PHONE_DISPLAY = "+91 00000 00000";   // shown on the site
+var PHONE_DIGITS  = "910000000000";      // country code + number, digits only, used for call and WhatsApp
+/* ================================ */
+(function(){
+  document.querySelectorAll(".ph").forEach(function(a){a.textContent=PHONE_DISPLAY;a.href="tel:+"+PHONE_DIGITS});
+  document.getElementById("yr").textContent=new Date().getFullYear();
+  var pages=["home","about","products","contact"],nav=document.getElementById("nav"),btn=document.querySelector(".menu-btn");
+  var titles={home:"Sri Laxmi Prasanna Traders | Steel, Cement, Hardware & Electricals, Sangareddy",about:"About us | Sri Laxmi Prasanna Traders",products:"Products | Sri Laxmi Prasanna Traders",contact:"Contact | Sri Laxmi Prasanna Traders"};
+  function show(){
+    var id=(location.hash||"#home").slice(1); if(pages.indexOf(id)<0)id="home";
+    pages.forEach(function(p){document.getElementById(p).classList.toggle("on",p===id)});
+    document.querySelectorAll("nav a").forEach(function(a){a.getAttribute("href")==="#"+id?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current")});
+    document.title=titles[id];nav.classList.remove("open");btn.setAttribute("aria-expanded","false");window.scrollTo(0,0);
+  }
+  window.addEventListener("hashchange",show);show();
+  btn.addEventListener("click",function(){var o=nav.classList.toggle("open");btn.setAttribute("aria-expanded",o)});
+  if(window.innerWidth<860)document.getElementById("cgrid").style.gridTemplateColumns="1fr";
+  window.addEventListener("resize",function(){document.getElementById("cgrid").style.gridTemplateColumns=window.innerWidth<860?"1fr":"1fr 1.3fr"});
+  document.getElementById("enq").addEventListener("submit",function(e){
+    e.preventDefault();
+    var g=function(i){return document.getElementById(i).value};
+    var text="New enquiry from website%0AName: "+encodeURIComponent(g("n"))+"%0APhone: "+encodeURIComponent(g("p"))+"%0AType: "+encodeURIComponent(g("t"))+"%0ACategory: "+encodeURIComponent(g("c"))+"%0ARequirement: "+encodeURIComponent(g("m"));
+    window.open("https://wa.me/"+PHONE_DIGITS+"?text="+text,"_blank","noopener");
+    document.getElementById("msg").style.display="block";
+  });
+})();
+</script>
+</body>
+</html>
